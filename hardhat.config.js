@@ -16,22 +16,14 @@ module.exports = {
   solidity: "0.8.17",
   defaultNetwork: "ganache",
   networks: {
-    ganache:{
-      url: process.env.GANACHE_URL,
-      accounts: [process.env.GANACHE_ACC1_KEY],
-      // gas: 3000000,
-      // gasPrice: 8000000000,
+    goerli: {
+      url:process.env.GOERLI_URL,
+      accounts: [process.env.GOERLI_ACC1],
     },
 
     hardhat: {
       chainId: 1337,
     },
-
-    // BSCtestnet: {
-    //   url: process.env.BSC_TESTNET_URL,
-    //   chainId: 97,
-    //   accounts: [process.env.BSC_PRIVATE_KEY],
-    // },
 
   },
 
