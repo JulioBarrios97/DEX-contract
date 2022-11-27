@@ -27,11 +27,11 @@ module.exports = {
       chainId: 1337,
     },
 
-    BSCtestnet: {
-      url: process.env.BSC_TESTNET_URL,
-      chainId: 97,
-      accounts: [process.env.BSC_PRIVATE_KEY],
-    },
+    // BSCtestnet: {
+    //   url: process.env.BSC_TESTNET_URL,
+    //   chainId: 97,
+    //   accounts: [process.env.BSC_PRIVATE_KEY],
+    // },
 
   },
 
