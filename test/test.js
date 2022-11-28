@@ -23,7 +23,7 @@ describe("Wallet Contract", () => {
       9000000
     );
 
-    var result = await this.wallet.slpTokenBalance();
+    var result = await this.wallet.sushiTokenBalance();
 
     assert.notEqual(result, 0);
   })
