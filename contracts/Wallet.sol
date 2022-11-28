@@ -80,11 +80,11 @@ contract Wallet {
 
         uint256 poolIndex = masterChef.poolLength() - 1;
 
-        // masterChef.deposit(poolIndex, LPamount);
+        masterChef.deposit(poolIndex, LPamount);    //Esto deberia depositar los SLP y entregarme SUSHI
     }
 
-    function slpTokenBalance() public view returns (uint256 slpAmount) {
-        slpAmount = LPtoken.balanceOf(address(this));
+    function sushiTokenBalance() public view returns (uint256 sushiAmount) {
+        sushiAmount = SushiToken.balanceOf(address(this));
     }
 
     function withdraw(address _to, uint256 _amount) public payable {
