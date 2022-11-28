@@ -28,6 +28,6 @@ module.exports = {
   },
 
   etherscan: {
-    apiKey: process.env.BSC_SCAN_KEY
+    apiKey: process.env.ETH_SCAN_KEY
   },
 };
