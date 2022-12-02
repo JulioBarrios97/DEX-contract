@@ -25,7 +25,7 @@ describe("Wallet Contract", () => {
 
     var result = await this.wallet.sushiTokenBalance(); //Consulta el balance de SUSHI en el contrato
 
-    assert.notEqual(result, 0);
+    assert.notEqual(result, 0); //El balance del contrato deberia ser distinto de 0
   })
 
 });
