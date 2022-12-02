@@ -15,15 +15,15 @@ describe("Wallet Contract", () => {
 
     //-----Carga los datos de los token al contrato
     await this.wallet.mainFunction(
-      "0xF820D59BAF6799063bE03367fA963454117aaDf3",
-      "0x07865c6E87B9F70255377e024ace6630C1Eaa37F",
-      10000000000000000000,
-      10000000,
+      "0xF820D59BAF6799063bE03367fA963454117aaDf3", //Token propio
+      "0x07865c6E87B9F70255377e024ace6630C1Eaa37F", //USDC en Goerli
+      10000000000000000000, //18 decimales
+      10000000, //6 decimales
       9000000000000000000,
       9000000
     );
 
-    var result = await this.wallet.sushiTokenBalance();
+    var result = await this.wallet.sushiTokenBalance(); //Consulta el balance de SUSHI en el contrato
 
     assert.notEqual(result, 0);
   })
